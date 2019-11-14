@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rso1920-mejnik-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rso1920-mejnik
+  template:
+    metadata:
+      labels:
+        app: rso1920-mejnik
+    spec:
+      containers:
+      - image: rso1920/mejnik:latest
+        name: rso1920-mejnik
+        ports:
+        - containerPort: 8000
+          name: server-mejnik
+          protocol: TCP
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: rso1920-mejnik
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8000
+    protocol: TCP
+    targetPort: server-mejnik
+  selector:
+    app: rso1920-mejnik
