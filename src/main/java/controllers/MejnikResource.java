@@ -19,20 +19,26 @@ public class MejnikResource {
 
         MejnikDTO mejnikDTO = new MejnikDTO();
 
-        List<String> clani = Arrays.asList("uz1734", "TODO", "TODO");
+        List<String> clani = Arrays.asList("uz1734", "jp8765", "dp5306");
         List<String> mikrostoritve = Arrays.asList("http://35.238.67.18:8083/v1/users",
                 "http://34.67.224.136:8080/v1/channels/",
-                "http://35.223.19.179:8088/v1/catalog/user/1"
+                "http://35.223.19.179:8088/v1/catalog/user/1",
+                "http://34.66.206.226:8084/v1/stream",
+                "http://35.223.19.179:8088/v1/catalog/channel/1",
+                "http://34.67.224.136:8080/v1/users/3"
         );
         List<String> github = Arrays.asList("https://github.com/RSO-1920/users",
                 "https://github.com/RSO-1920/channels",
-                "https://github.com/RSO-1920/catalog");
+                "https://github.com/RSO-1920/catalog",
+                "https://github.com/RSO-1920/videoStreamer");
         List<String> travis = Arrays.asList("https://travis-ci.org/RSO-1920/users",
                 "https://travis-ci.org/RSO-1920/channels",
-                "https://travis-ci.org/RSO-1920/catalog");
+                "https://travis-ci.org/RSO-1920/catalog",
+                "https://travis-ci.org/RSO-1920/videoStreamer");
         List<String> dockerhub = Arrays.asList("https://cloud.docker.com/u/rso1920/repository/docker/rso1920/users",
                 "https://cloud.docker.com/u/rso1920/repository/docker/rso1920/channels",
-                "https://cloud.docker.com/u/rso1920/repository/docker/rso1920/catalog");
+                "https://cloud.docker.com/u/rso1920/repository/docker/rso1920/catalog",
+                "https://hub.docker.com/repository/docker/rso1920/video-streamer");
 
         mejnikDTO.setClani(clani);
         mejnikDTO.setOpis_projekta("Nas projekt implementira aplikacijo za deljenje in ogled dototek različnih formatov.");
