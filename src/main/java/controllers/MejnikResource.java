@@ -21,14 +21,16 @@ public class MejnikResource {
 
         List<String> clani = Arrays.asList("uz1734", "jp8765", "dp5306");
         List<String> mikrostoritve = Arrays.asList("http://35.223.19.179/users/v1/users",
-                "http://35.223.19.179/channels/v1/channels/",
-                "http://35.223.19.179/catalog/v1/catalog/user/1",
-                "http://35.223.19.179/streamer/v1/stream",
-                "http://35.223.19.179/catalog/v1/catalog/channel/1",
                 "http://35.223.19.179/users/v1/users/3",
+                "http://35.223.19.179/channels/v1/channels/",
                 "http://35.223.19.179/channels/v1/channels/channelUsers/2",
                 "http://35.223.19.179/channels/v1/channels/userChannels/2",
-                "http://35.223.19.179/channels/v1/channels/1"
+                "http://35.223.19.179/channels/v1/channels/1",
+                "http://35.223.19.179/catalog/v1/catalog/user/1",
+                "http://35.223.19.179/catalog/v1/fileMetadata/1",
+                "http://35.223.19.179/catalog/v1/catalog/channel/1",
+                "http://35.223.19.179/streamer/v1/stream"
+
         );
         List<String> github = Arrays.asList("https://github.com/RSO-1920/users",
                 "https://github.com/RSO-1920/channels",
