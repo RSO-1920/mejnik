@@ -27,7 +27,8 @@ public class MejnikResource {
                 "http://35.223.19.179/catalog/v1/catalog/channel/1",
                 "http://35.223.19.179/users/v1/users/3",
                 "http://35.223.19.179/channels/v1/channels/channelUsers/2",
-                "http://35.223.19.179/channels/v1/channels/userChannels/2"
+                "http://35.223.19.179/channels/v1/channels/userChannels/2",
+                "http://35.223.19.179/channels/v1/channels/1"
         );
         List<String> github = Arrays.asList("https://github.com/RSO-1920/users",
                 "https://github.com/RSO-1920/channels",
